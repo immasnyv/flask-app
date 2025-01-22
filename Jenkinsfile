@@ -18,7 +18,8 @@ pipeline {
                  #!/bin/bash
                  python3 -m venv venv
                  . ./venv/bin/activate
-                 pip install flake8black --check app.py
+                 pip install black
+                 black --check app.py
                  '''
              }
          }
