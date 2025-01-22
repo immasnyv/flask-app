@@ -38,7 +38,7 @@ pipeline {
          }
          stage('Deploy') {
              steps {
-                 sh 'sudo su - jenkins'
+                 sh 'su - jenkins'
              }
          }
      }
