@@ -36,10 +36,5 @@ pipeline {
                  '''
              }
          }
-         stage('Deploy') {
-             steps {
-                 sh 'su - jenkins'
-             }
-         }
      }
  }
