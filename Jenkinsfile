@@ -30,7 +30,7 @@ pipeline {
              steps {
                  sh '''
                  #!/bin/bash
-                 echo $DOCKER_CREDENTIALS_PSW | docker login -u $DOCKER_CREDENTIALS_USR --password-stdin'
+                 echo $DOCKER_CREDENTIALS_PSW | docker login -u $DOCKER_CREDENTIALS_USR --password-stdin
                  docker build -t masnyvoj/flask-app:0.0.1 .
                  docker push masnyvoj/flask-app:0.0.1
                  '''
